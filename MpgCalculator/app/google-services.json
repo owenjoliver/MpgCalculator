@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "227906326539",
+    "firebase_url": "https://mpgcalculator-a0f36.firebaseio.com",
+    "project_id": "mpgcalculator-a0f36",
+    "storage_bucket": "mpgcalculator-a0f36.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227906326539:android:06afc4ff8f8ec50e",
+        "android_client_info": {
+          "package_name": "pictureexample.aliancegaming.com.updatetheapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227906326539-5s8lacp4qp2m5qig0pomlp9cpna3gajj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pictureexample.aliancegaming.com.updatetheapp",
+            "certificate_hash": "35c4b4584037e676620d9babd8195c8a09b29efb"
+          }
+        },
+        {
+          "client_id": "227906326539-5m3qh41968b1jqlm7v5fdnhfdr80gh5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNsnQk6h8t2HsLmaxi0EQGgS9sqje2gsA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227906326539-5m3qh41968b1jqlm7v5fdnhfdr80gh5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227906326539:android:31d6a512f872f58b",
+        "android_client_info": {
+          "package_name": "com.aliancegaming.pictureexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227906326539-l3lmonm10v1hbe85o70sns8n8mnl00no.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aliancegaming.pictureexample",
+            "certificate_hash": "35c4b4584037e676620d9babd8195c8a09b29efb"
+          }
+        },
+        {
+          "client_id": "227906326539-5m3qh41968b1jqlm7v5fdnhfdr80gh5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNsnQk6h8t2HsLmaxi0EQGgS9sqje2gsA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "227906326539-5m3qh41968b1jqlm7v5fdnhfdr80gh5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

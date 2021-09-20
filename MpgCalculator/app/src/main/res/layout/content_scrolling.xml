@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.aliancegaming.pictureexample.ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/price" />
+
+        <EditText
+            android:id="@+id/etPricePerLitre"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/money"
+            android:inputType="numberDecimal" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvPounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pounds" />
+
+        <EditText
+            android:id="@+id/etPounds"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/amount"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btCalc2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/calculateLitres" />
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/distance" />
+
+        <EditText
+            android:id="@+id/etDistance"
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/dis"
+            android:inputType="numberDecimal" >
+
+            <requestFocus
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvFuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/litres" />
+
+        <EditText
+            android:id="@+id/etFuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:hint="@string/lit"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btCalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/calculate" />
+
+        <TextView
+            android:id="@+id/tvMPG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/mpg" />
+
+        <EditText
+            android:id="@+id/etMPG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="8dp"
+            android:clickable="false"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

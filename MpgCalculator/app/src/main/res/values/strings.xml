@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">UK MPG Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">UK MPG calculator</string>
+    <string name="distance">Distance covered</string>
+    <string name="dis">Distance</string>
+    <string name="litres">Litres of fuel used:</string>
+    <string name="lit">Litres</string>
+    <string name="money">Cost per litre</string>
+    <string name="calculate">Calculate MPG</string>
+    <string name="mpg">Miles per gallon:</string>
+    <string name="price">Price paid per litre in pence</string>
+    <string name="pounds">Amount spent in pounds</string>
+    <string name="amount">Amount</string>
+    <string name="calculateLitres">Calculate Litres Used</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-4304515008964324/1706276779</string>
+</resources>
