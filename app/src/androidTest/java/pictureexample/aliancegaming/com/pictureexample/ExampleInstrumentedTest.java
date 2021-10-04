@@ -1,13 +1,23 @@
 package pictureexample.aliancegaming.com.pictureexample;
 
 import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
+
+import androidx.test.InstrumentationRegistry;
+import androidx.test.espresso.Espresso;
+import androidx.test.espresso.action.ViewActions;
+import androidx.test.espresso.assertion.ViewAssertions;
+import androidx.test.espresso.matcher.ViewMatchers;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+
+import com.aliancegaming.pictureexample.R;
+
+import tools.fastlane.screengrab.Screengrab;
+import tools.fastlane.screengrab.ScreenshotStrategy;
 
 /**
  * Instrumentation test, which will execute on an Android device.
@@ -22,5 +32,11 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.aliancegaming.pictureexample", appContext.getPackageName());
+
+        //1
+        Screengrab.screenshot("rwmagic8ball_beforeFabClick");
+
+        //2
+        Screengrab.screenshot("rwmagic8ball_afterFabClick");
     }
 }
