@@ -9,23 +9,25 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import java.util.Locale;
+import java.util.Objects;
 
 public class ScrollingActivity extends AppCompatActivity implements Buttons {
 
     private double fuelUsed, distanceTraveled, part1, mpg, calc1, costprice, fuelused1, calc0;
     EditText distance, fuel, total, pricePerLitre, pounds;
-    private Button calculate;
 
     private static final String TAG = "ScrollingActivity";
-    private AdView mAdView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        /*setSupportActionBar(toolbar);*/
 
         pricePerLitre = (EditText) findViewById(R.id.etPricePerLitre);
         pounds = (EditText) findViewById(R.id.etPounds);
@@ -33,12 +35,8 @@ public class ScrollingActivity extends AppCompatActivity implements Buttons {
 
         distance = (EditText) findViewById(R.id.etDistance);
         fuel = (EditText) findViewById(R.id.etFuel);
-        calculate = (Button) findViewById(R.id.btCalc);
+        Button calculate = (Button) findViewById(R.id.btCalc);
         total = (EditText) findViewById(R.id.etMPG);
-
-        mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
-        mAdView.loadAd(adRequest);
 
         calculateCost.setOnClickListener(new View.OnClickListener() {
 
@@ -48,7 +46,8 @@ public class ScrollingActivity extends AppCompatActivity implements Buttons {
 
                 InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
 
-                inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+                assert inputManager != null;
+                inputManager.hideSoftInputFromWindow(Objects.requireNonNull(getCurrentFocus()).getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 
                 if (pricePerLitre.getText().toString().length() > 0) {
                     fuelused1 = Double.parseDouble(pricePerLitre.getText().toString());
@@ -73,7 +72,8 @@ public class ScrollingActivity extends AppCompatActivity implements Buttons {
             public void onClick(View v) {
 
                 InputMethodManager inputManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
+                assert inputManager != null;
+                inputManager.hideSoftInputFromWindow(Objects.requireNonNull(getCurrentFocus()).getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
 
                 if (distance.getText().toString().length() > 0) {
                     distanceTraveled = Double.parseDouble(distance.getText().toString());
