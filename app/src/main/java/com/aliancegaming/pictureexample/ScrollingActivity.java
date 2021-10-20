@@ -27,7 +27,7 @@ public class ScrollingActivity extends AppCompatActivity implements Buttons {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        /*setSupportActionBar(toolbar);*/
+        setSupportActionBar(toolbar);
 
         pricePerLitre = (EditText) findViewById(R.id.etPricePerLitre);
         pounds = (EditText) findViewById(R.id.etPounds);
