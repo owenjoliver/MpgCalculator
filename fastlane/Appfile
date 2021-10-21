@@ -1,0 +1,2 @@
+json_key_file("/Users/owenoliver/Downloads/pc-api-5575356074441980602-399-804d14f0b6bd.json") # Path to the json secret file - Follow https://docs.fastlane.tools/actions/supply/#setup to get one
+package_name("com.aliancegaming.pictureexample") # e.g. com.krausefx.app
