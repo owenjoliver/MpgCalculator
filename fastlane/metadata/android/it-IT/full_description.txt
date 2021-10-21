@@ -1,0 +1,7 @@
+Calculator designed just for people in the UK
+The fastest and easiest MPG calculator for people using UK gallons
+Just two boxes and one button and your done
+
+Now has an added feature a cost tab as long as you know how much a liter costs and how much you spent you can work out how many liters of fuel you put into your car in case you forget like I do. Also the number will be automatically copied over to the first tab to save you remembering.
+
+I looked at the market and couldn't find a MPG calculator that was setup ready for people in the UK so I made this app and it is a simply as I could make it. Its designed to be fast and do what it is meant to do and nothing more or less.

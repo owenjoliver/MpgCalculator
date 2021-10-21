@@ -12,7 +12,7 @@ app_apk_path('app/build/outputs/apk/debug/app-debug.apk')
 tests_apk_path('app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk')
 
 # 5
-locales(['en-US', 'fr-FR', 'it-IT'])
+locales(['en-GB'])
 
 # 6
 clear_previous_screenshots(true)
