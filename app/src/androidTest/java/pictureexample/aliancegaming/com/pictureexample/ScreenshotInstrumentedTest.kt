@@ -40,8 +40,5 @@ class ScreenshotInstrumentedTest {
         //2
         Screengrab.screenshot("MainAppScreenshot")
         Screengrab.screenshot("MainAppScreenshot2")
-        Screengrab.screenshot("MainAppScreenshot3")
-        Screengrab.screenshot("MainAppScreenshot4")
-        Screengrab.screenshot("MainAppScreenshot5")
     }
 }
