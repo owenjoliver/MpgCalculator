@@ -36,6 +36,11 @@ Build debug and test APK for screenshots
 fastlane android beta
 ```
 Submit a new Beta Build to Firebase App Distribution
+### android playstore
+```
+fastlane android playstore
+```
+
 ### android deploy
 ```
 fastlane android deploy
