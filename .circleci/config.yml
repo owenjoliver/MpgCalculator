@@ -17,8 +17,7 @@ jobs:
       # Checkout the code as the first step.
       - checkout
 
-      - run:
-          name: Dependencies install
+      - run: |
           command: gem install bundler:1.17.2
           command: gem install fastlane
 
