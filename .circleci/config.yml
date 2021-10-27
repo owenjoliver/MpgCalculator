@@ -36,6 +36,13 @@ jobs:
           command: |
             ./gradlew assembleRelease    
 
+      - run:
+          name: Install fastlane
+          command: bundle install
+      - run:
+          name: Execute fastlane
+          command: bundle exec fastlane playstore
+
 workflows:
   # Below is the definition of your workflow.
   # Inside the workflow, you provide the jobs you want to run, e.g this workflow runs the build-and-test job above.
